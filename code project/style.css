@@ -81,3 +81,30 @@ bottom: -50px;
 .footer-homepage {
   bottom: -50px;
 }
+
+/* Blocks container for separate text blocks */
+.blocks-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1rem;
+  margin: 1.5rem 0;
+}
+
+.text-block {
+  background: rgba(255,255,255,0.95);
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  border: 1px solid rgba(0,0,0,0.05);
+}
+
+.text-block h2 {
+  margin-bottom: 0.5rem;
+  font-size: 1.25rem;
+}
+
+.text-block p {
+  color: #333;
+  font-size: 0.95rem;
+}
+
