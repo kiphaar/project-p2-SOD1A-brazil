@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="nl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Website over Brazilië" />
+    <title>Brazilië Homepage</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body class="body-homepage">
+    <header class="header-homepage">
+      <nav class="nav-homepage">
+        <a href="#">Home</a>
+        <a href="#">Over Brazilië</a>
+        <a href="religions.html">Geloof</a>
+        <a href="maatschappelijke_problemen.html">problemen</a>
+      </nav>
+    </header>
+
+    <section id="hero" class="hero">
+      <h1 class="intro1">Ontdek Brazilië</h1>
+      <p class="beschrijving">
+        Brazilië is het grootste land van Zuid-Amerika en staat bekend om zijn warme cultuur, mooie stranden, regenwouden en grote steden. Het land heeft een mix van verschillende culturen, talen en tradities. Van het Amazoneregenwoud tot de beroemde stad Rio de Janeiro: Brazilië is kleurrijk, levendig en heel divers. Op deze website lees je meer over het land, de mensen en hun religies.
+      </p>
+      <p class="intro2">Een land vol natuur en cultuur</p>
+      <a href="#pagina2" class="introbtn">Lees meer</a>
+      <div class="shape-lijntje"></div>
+      <div class="vlak-doorzichtig"></div>
+
+      <div class="fotos-brazil">
+        <img
+          class="foto-brazil-bewerk"
+          src="img/brazil-foto-1.jpg"
+          alt="brazil-foto-1"
+        />
+        <img
+          class="foto-brazil-bewerk"
+          src="img/brazil-foto-2.jpg"
+          alt="brazil-foto-2"
+        />
+        <img
+          class="foto-brazil-bewerk"
+          src="img/brazil-foto-3.jpg"
+          alt="brazil-foto-3"
+        />
+        <img
+          class="foto-brazil-bewerk"
+          src="img/brazil-foto-4.jpg"
+          alt="brazil-foto-4"
+        />
+      </div>
+    </section>
+
+    <section id="pagina2" class="pagina2">
+      <main class="main-homepage" id="main">
+        <h2>informatie</h2>
+      </main>
+    
+    </section>
+<div id="footer-container"></div>
+    <script>
+      const footer = document.createElement("footer");
+      footer.innerHTML = `
+            <p>gemaakt door Jayden & Dewish.</p>
+        
+        `;
+      footer.style.textAlign = "center";
+      footer.style.padding = "20px";
+      footer.style.backgroundColor = "#f1f1f1";
+      footer.style.position = "absolute";
+
+      footer.style.width = "100%";
+      footer.style.backgroundColor = "rgba(100, 100, 100,)";
+
+      document.getElementById("footer-container").appendChild(footer);
+    </script>
+  </body>
+</html>

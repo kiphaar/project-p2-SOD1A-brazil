@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="nl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Website over Brazilië" />
+    <title>Brazilië Homepage</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body class="body-homepage">
+    <header class="header-homepage">
+      <nav class="nav-homepage">
+        <a href="index.html">Home</a>
+        <a href="#">Over Brazilië</a>
+        <a href="#">Cultuur</a>
+        <a href="#">Contact</a>
+      </nav>
+    </header>
+
+    <section id="hero" class="hero">
+      <h1 class="intro1-religies">Religie in Brazilië</h1>
+      <p class="intro2-religies">Een land vol cultuur</p>
+      <div class="vlak-doorzichtig-religies"></div>
+<main class="main-homepage-religies">
+        <h2>Geloven</h2>
+    <div class="vlakje-k">
+      <img src="img/katholiek.png" class="katholiek" />
+      <h1>Katholiek</h1>
+      <p>55%</p>
+    </div>
+    <div class="vlakje-p">
+      <img src="img/protestant.png" class="protestant"/>
+       <h1>Protestant</h1>
+      <p>30%</p>
+    </div>
+    <div class="vlakje-c">
+      <img src="img/atheist.png" class="atheist"/>
+       <h1>Atheist</h1>
+      <p>10%</p>
+    </div>
+    <div class="vlakje-a">
+      <img src="img/overig.png" class="overig"/>
+       <h1>Overig</h1>
+      <p>5%</p>
+    </div>
+      </main>
+    </section>
+
+    <section id="pagina2" class="pagina2">
+      <div class="religie-homepage">
+      <h1 class="Religies in Brazillië">Religies in Brazillië</h1>
+        <p class="religie-tekst1">
+          Brazilië is een groot land met veel verschillende geloven. Door de geschiedenis, zoals Portugese kolonisatie en Afrikaanse invloeden, is er een mix van culturen ontstaan. Hierdoor zijn er verschillende religies die vandaag de dag belangrijk zijn.
+        </p>
+      </div>
+    
+        <div class="religie-homepage2">
+      <h1 class="Religies in Brazillië">Religies in Brazillië</h1>
+        <p class="religie-tekst1">
+          Brazilië is een groot land met veel verschillende geloven. Door de geschiedenis, zoals Portugese kolonisatie en Afrikaanse invloeden, is er een mix van culturen ontstaan. Hierdoor zijn er verschillende religies die vandaag de dag belangrijk zijn.
+        </p>
+      </div>
+
+      <div class="religie-homepage3">
+      <h1 class="Religies in Brazillië">Religies in Brazillië</h1>
+        <p class="religie-tekst1">
+          Brazilië is een groot land met veel verschillende geloven. Door de geschiedenis, zoals Portugese kolonisatie en Afrikaanse invloeden, is er een mix van culturen ontstaan. Hierdoor zijn er verschillende religies die vandaag de dag belangrijk zijn.
+        </p>
+      </div>
+
+    </section>
+<div id="footer-container"></div>
+    <script>
+      const footer = document.createElement("footer");
+      footer.innerHTML = `
+            <p>gemaakt door Jayden & Dewish.</p>
+        
+        `;
+      footer.style.textAlign = "center";
+      footer.style.padding = "20px";
+      footer.style.backgroundColor = "#f1f1f1";
+      footer.style.position = "absolute";
+
+      footer.style.width = "100%";
+      footer.style.backgroundColor = "rgba(100, 100, 100,)";
+
+      document.getElementById("footer-container").appendChild(footer);
+    </script>
+  </body>
+</html>

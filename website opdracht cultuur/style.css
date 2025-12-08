@@ -1,0 +1,389 @@
+/* ====== GLOBAL ====== */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Arial", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* ====== BODY ====== */
+
+.body-homepage {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f4f4f4;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5)),
+    url(https://wallpaperaccess.com/full/46591.jpg);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* ====== HEADER + NAV ====== */
+
+.header-homepage {
+  height: 0;
+}
+
+.nav-homepage {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  padding: 1rem 0;
+  background: rgba(0, 62, 128, 1);
+  z-index: 1000;
+}
+
+.nav-homepage a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.1rem;
+  transition: 0.3s;
+}
+
+.nav-homepage a:hover {
+  text-decoration: underline;
+  color: #ffd700;
+}
+
+/* ====== HERO ====== */
+
+.hero {
+  z-index: 4;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("https://wallpaperaccess.com/full/46591.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  text-align: center;
+}
+
+.hero::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.hero-content {
+  position: relative;
+  color: #fff;
+  max-width: 600px;
+}
+
+/* ====== HERO TEXT & BUTTON ====== */
+
+.introbtn {
+  z-index: 1000000;
+  position: absolute;
+  left: 25%;
+  top: 37%;
+  transform: translate(-50%, -50%);
+  padding: 0.7rem 1.5rem;
+  background-color: #ffd700; 
+  color: #000;
+  font-weight: bold;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.btn-hero:hover {
+  background-color: #ffa500;
+}
+
+.intro1 {
+  color: #ffcc29;
+  font-size: 70px;
+  font-weight: bold;
+  text-shadow: 2px 2px #009739;
+  position: absolute;
+  left: 25%;
+  top: 25%;
+  transform: translate(-50%, -50%);
+}
+
+.intro2 {
+  color: #ffcc29;
+  font-size: 25px;
+  font-weight: bold;
+  text-shadow: 2px 2px #000;
+  position: absolute;
+  left: 25%;
+  top: 30%;
+  transform: translate(-50%, -50%);
+}
+
+.beschrijving {
+  background-color: rgba(0, 0, 0, 0.3);
+  padding: 3rem 2rem;
+  border-radius: 10%;
+  color: #ffcc29;
+  font-size: 20px;
+  max-width: 400px;
+  position: absolute;
+  left: 25%;
+  top: 70%;
+  transform: translate(-50%, -50%);
+  font-weight: bold;
+}
+
+.shape-lijntje {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 5px;
+  height: 100%;
+  background-color: #ffd700;
+  z-index: 1;
+}
+
+.vlak-doorzichtig {
+  z-index: -2;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.497);
+}
+
+/* ====== MAIN BLOCKS ====== */
+
+.main-homepage {
+  flex: 1;
+  padding: 3rem 2rem;
+  max-width: 800px;
+  margin: 2rem auto 3rem auto;
+  background-color: rgba(255, 255, 255, 0.95);
+  border-radius: 10px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.main-homepage h2 {
+  color: #008000;
+  margin-bottom: 1rem;
+  font-size: 2rem;
+}
+
+.main-homepage p {
+  margin-bottom: 1rem;
+  line-height: 1.8;
+}
+
+/* ====== BLOKKEN ====== */
+
+.blocks-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: space-between;
+  align-items: stretch;
+  margin: 1.5rem 0;
+}
+
+.text-block {
+  background: rgba(255,255,255,0.95);
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  border: 1px solid rgba(0,0,0,0.05);
+  flex: 1 1 240px;
+  display: flex;
+  flex-direction: column;
+}
+
+.text-block h2 {
+  margin-bottom: 0.5rem;
+  font-size: 1.25rem;
+}
+
+.text-block p {
+  color: #333;
+  font-size: 0.95rem;
+}
+
+/* ====== FOTO GRID ====== */
+
+.fotos-brazil {
+  position: absolute;
+  right: 25%;
+  top: 50%;
+  transform: translate(50%, -50%);
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
+  gap: 16px;
+  width: 40%;
+}
+
+.foto-brazil-bewerk {
+  width: 100%;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+.foto-brazil-bewerk:hover {
+  transform: scale(1.05);
+}
+
+/* ====== FOOTER ====== */
+
+.footer-homepage {
+  text-align: center;
+  padding: 1.5rem 0;
+  background-color: rgba(0, 128, 0, 0.85);
+  color: #fff;
+  font-size: 0.9rem;
+  margin-top: 2rem;
+}
+
+/* ====== PAGINA 2 RELIGIES ====== */
+
+.pagina2 {
+  background-color: #0c5300a9;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  text-align: center;
+}
+
+.intro1-religies {
+  color: #ffcc29;
+  font-size: 90px;
+  font-weight: bold;
+  text-shadow: 2px 2px #009739;
+  position: absolute;
+  left: 50%;
+  top: 25%;
+  transform: translate(-50%, -50%);
+}
+
+.intro2-religies {
+  color: #ffcc29;
+  font-size: 25px;
+  font-weight: bold;
+  text-shadow: 2px 2px #000;
+  position: absolute;
+  left: 50%;
+  top: 32%;
+  transform: translate(-50%, -50%);
+}
+
+.vlak-doorzichtig-religies {
+  z-index: -2;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 50%;
+  background-color: rgba(0, 0, 0, 0.374);
+}
+
+.main-homepage-religies {
+  position: absolute;
+  bottom: 5%;
+  padding: 3rem 2rem;
+  width: 80%;
+  height: 35%;
+  background-color: rgba(255, 255, 255, 0.95);
+  border-radius: 10px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-homepage-religies h2 {
+  color: #008000;
+  margin-bottom: 1rem;
+  font-size: 2rem;
+}
+
+.main-homepage-religies p {
+  margin-bottom: 1rem;
+  line-height: 1.8;
+}
+
+/* RELIGIE VLAKJES */
+
+.vlakje-k, .vlakje-p, .vlakje-c, .vlakje-a {
+  height: 250px;
+  width: 250px;
+  border-radius: 10%;
+  box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  text-shadow: 2px 2px 2px #0000006f;
+}
+
+.vlakje-k { background: rgba(255, 105, 255, 0.521); }
+.vlakje-p { background: rgba(0, 110, 255, 0.504); }
+.vlakje-c { background: rgba(0, 255, 81, 0.509); }
+.vlakje-a { background: rgba(255, 0, 0, 0.5); }
+
+/* ICONEN */
+
+.katholiek,
+.protestant,
+.atheist,
+.overig {
+  width: 90px;
+  height: auto;
+  position: absolute;
+  top: 15%;
+}
+
+/* RELIGIE TEKSTBLOKKEN */
+
+.religie-homepage,
+.religie-homepage2,
+.religie-homepage3 {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  padding: 3rem 2rem;
+  max-width: 600px;
+  background-color: rgba(255, 255, 255, 0.95);
+  border-radius: 10px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.religie-homepage {
+  top: 80%;
+  left: 25%;
+}
+
+.religie-homepage2 {
+  top: 20%;
+  left: 25%;
+}
+
+.religie-homepage3 {
+  top: 50%;
+  left: 75%;
+  height: 700px;
+}
