@@ -1,4 +1,4 @@
-/* ====== GLOBAL ====== */
+
 
 * {
   margin: 0;
@@ -11,7 +11,7 @@ html {
   scroll-behavior: smooth;
 }
 
-/* ====== BODY ====== */
+
 
 .body-homepage {
   display: flex;
@@ -20,14 +20,14 @@ html {
   line-height: 1.6;
   color: #333;
   background-color: #f4f4f4;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5)),
-    url(https://wallpaperaccess.com/full/46591.jpg);
+  /* background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5)),
+    url(https://wallpaperaccess.com/full/46591.jpg); */
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-/* ====== HEADER + NAV ====== */
+
 
 .header-homepage {
   height: 0;
@@ -59,7 +59,7 @@ html {
   color: #ffd700;
 }
 
-/* ====== HERO ====== */
+
 
 .hero {
   z-index: 4;
@@ -91,13 +91,13 @@ html {
   max-width: 600px;
 }
 
-/* ====== HERO TEXT & BUTTON ====== */
+
 
 .introbtn {
   z-index: 1000000;
   position: absolute;
   left: 25%;
-  top: 37%;
+  top: 55%;
   transform: translate(-50%, -50%);
   padding: 0.7rem 1.5rem;
   background-color: #ffd700; 
@@ -119,7 +119,7 @@ html {
   text-shadow: 2px 2px #009739;
   position: absolute;
   left: 25%;
-  top: 25%;
+  top: 45%;
   transform: translate(-50%, -50%);
 }
 
@@ -130,7 +130,7 @@ html {
   text-shadow: 2px 2px #000;
   position: absolute;
   left: 25%;
-  top: 30%;
+  top: 50%;
   transform: translate(-50%, -50%);
 }
 
@@ -169,7 +169,7 @@ html {
   background-color: rgba(0, 0, 0, 0.497);
 }
 
-/* ====== MAIN BLOCKS ====== */
+
 
 .main-homepage {
   flex: 1;
@@ -192,7 +192,7 @@ html {
   line-height: 1.8;
 }
 
-/* ====== BLOKKEN ====== */
+
 
 .blocks-container {
   display: flex;
@@ -224,7 +224,7 @@ html {
   font-size: 0.95rem;
 }
 
-/* ====== FOTO GRID ====== */
+
 
 .fotos-brazil {
   position: absolute;
@@ -247,7 +247,7 @@ html {
   transform: scale(1.05);
 }
 
-/* ====== FOOTER ====== */
+
 
 .footer-homepage {
   text-align: center;
@@ -258,7 +258,7 @@ html {
   margin-top: 2rem;
 }
 
-/* ====== PAGINA 2 RELIGIES ====== */
+
 
 .pagina2 {
   background-color: #0c5300a9;
@@ -327,7 +327,7 @@ html {
   line-height: 1.8;
 }
 
-/* RELIGIE VLAKJES */
+
 
 .vlakje-k, .vlakje-p, .vlakje-c, .vlakje-a {
   height: 250px;
@@ -358,7 +358,7 @@ html {
   top: 15%;
 }
 
-/* RELIGIE TEKSTBLOKKEN */
+
 
 .religie-homepage,
 .religie-homepage2,
