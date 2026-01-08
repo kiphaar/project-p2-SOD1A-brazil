@@ -1,50 +1,83 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="nl">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Doelstelling van de landenopdracht Brazilië" />
+  <title>Doelstelling – Brazilië</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
 </head>
 <body class="body-doel">
-<main class="main-doel">
 
-<header class="header-doel">
-      <nav class="nav-doel">
-      <a href="maatschappelijke_problemen.html">problemen</a>
-        <a href="goede_doelen.html">Goede doelen</a>
-        <a href="religions.html">Geloof</a>
-        <a href="index.html">Home</a>
-      </nav>
-    </header>
+<div id="header"></div>
 
-    <h1>Doelstelling</h1>
-
-<p class="tekst1-doel">
-    Voor de landenopdracht heeft ons team gekozen voor het land Brazilië. Brazilië is een groot en veelzijdig land in Zuid-Amerika met veel cultuur, natuur en economische mogelijkheden. Tegelijkertijd heeft het land ook te maken met maatschappelijke problemen zoals armoede, ongelijkheid, beperkte toegang tot onderwijs en digitale achterstand. Met deze opdracht willen wij laten zien dat ICT niet alleen technisch is, maar ook kan bijdragen aan het oplossen van maatschappelijke vraagstukken.
+  <!-- Hero sectie -->
+  <section class="hero-doel">
+    <h1 class="intro1-doel">Onze Doelstelling</h1>
+    <p class="intro2-doel">ICT met maatschappelijke impact</p>
+    <div class="shape-lijntje-doel"></div>
+    <div class="vlak-doorzichtig-doel"></div>
+    <a href="#main-doel" class="introbtn-doel">Lees meer</a>
+    <p class="start-tekst-doel">In deze landenopdracht staat Brazilië centraal. Met deze website willen wij laten zien dat ICT meer is dan alleen code schrijven.<span class="start-tekst-doel2">  technologie te gebruiken om informatie te delen en maatschappelijke thema’s zichtbaar te maken, tonen wij aan hoe ICT’ers een positieve bijdrage kunnen leveren aan de samenleving.</span>
 </p>
+  </section>
+
+  <!-- Main content -->
+  <main id="main-doel" class="main-doel">
+
+    <section class="tekst1-doel">
+      <h2>Waarom deze landenopdracht?</h2>
+      <p>
+        De landenopdracht draait niet alleen om het leren bouwen van een website, maar vooral om het begrijpen van de maatschappelijke context waarin technologie wordt toegepast. In deze opdracht staat Brazilië centraal: een land met een enorme culturele rijkdom, maar ook met grote sociale en economische verschillen. Door middel van deze website laten wij zien dat ICT’ers een belangrijke rol kunnen spelen in het informeren van mensen en het creëren van bewustwording over maatschappelijke vraagstukken.
+      </p>
+
+      <p>
+        Tijdens de presentatie van dhr. Valies werd duidelijk gemaakt dat ICT niet losstaat van de samenleving. Technologie wordt dagelijks gebruikt om problemen zichtbaar te maken, informatie toegankelijk te maken en mensen met elkaar te verbinden. Deze landenopdracht is daar een goed voorbeeld van. Wij gebruiken webtechnologie om informatie over Brazilië overzichtelijk, aantrekkelijk en begrijpelijk te presenteren. Daarmee oefenen wij niet alleen technische vaardigheden, maar leren wij ook nadenken over de impact van onze keuzes als toekomstige ICT-professionals.
+      </p>
+
+      <img src="https://wallpaperaccess.com/full/4695145.jpg" alt="Brazilië landschap" style="width:100%; border-radius:12px; margin:1.5rem 0;">
+
+      <p>
+        In het document van de landenopdracht wordt benadrukt dat samenwerking en verantwoordelijkheid belangrijke onderdelen zijn van het project. Als team werken wij samen aan één website, waarbij iedereen een eigen pagina en taak heeft. Dit lijkt op hoe projecten in het echte werkveld verlopen. Door deze manier van werken leren wij plannen, communiceren en rekening houden met elkaars werk. Ook dit is een maatschappelijk relevante vaardigheid voor ICT’ers, omdat veel technologische oplossingen in teamverband worden ontwikkeld.
+      </p>
+
+      <p>
+        De doelstelling van onze website is om bezoekers een duidelijk en realistisch beeld te geven van Brazilië. Naast de mooie kanten van het land, zoals natuur, cultuur en religie, besteden wij ook aandacht aan maatschappelijke problemen en goede doelen. Op die manier proberen wij een evenwichtig beeld te schetsen. Technologie wordt hier ingezet als middel om kennis te delen en begrip te vergroten. Dit laat zien dat ICT niet alleen commercieel gebruikt wordt, maar ook een sociale functie kan hebben.
+      </p>
+
+      <img src="https://wallpaperaccess.com/full/46591.jpg" alt="Rio de Janeiro" style="width:100%; border-radius:12px; margin:1.5rem 0;">
+
+      <p>
+        Samenvattend is de doelstelling van deze landenopdracht om ons bewust te maken van de rol die wij als ICT’ers kunnen spelen in de maatschappij. Door het combineren van technische kennis, creativiteit en maatschappelijke betrokkenheid laten wij zien dat ICT veel meer is dan alleen code schrijven. Deze opdracht helpt ons om voorbereid te zijn op een toekomst waarin technologie steeds belangrijker wordt voor het oplossen en zichtbaar maken van maatschappelijke vraagstukken.
+      </p>
+    </section>
+
+  </main>
+
+  <!-- Footer (include-emulatie via JavaScript) -->
+  <div id="footer-container"></div>
+  <script>
+    const footer = document.createElement("footer");
+    footer.innerHTML = "<p>Gemaakt door Jayden & Dewish – PV1302</p>";
+    footer.style.textAlign = "center";
+    footer.style.padding = "20px";
+    footer.style.backgroundColor = "rgba(0, 62, 128, 0.9)";
+    footer.style.color = "#fff";
+    document.getElementById("footer-container").appendChild(footer);
 
 
-</main>
+    // header
+    fetch("header.html")
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById("header").innerHTML = data;
+    });
+  </script>
 
 
 
-    <div id="footer-container"> </div>
-    <script>
-      const footer = document.createElement("footer");
-      footer.innerHTML = `
-            <p>gemaakt door Jayden & Dewish.</p>
-        
-        `;
-      footer.style.textAlign = "center";
-      footer.style.padding = "20px";
-      footer.style.backgroundColor = "#f1f1f1";
-      footer.style.position = "absolute";
 
-      footer.style.width = "100%";
-      footer.style.backgroundColor = "rgba(100, 100, 100,)";
 
-      document.getElementById("footer-container").appendChild(footer);
-    </script>
 </body>
 </html>

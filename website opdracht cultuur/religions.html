@@ -9,15 +9,15 @@
     <script src="script.js" defer></script>
   </head>
   <body class="body-religie">
-    <header class="header-homepage">
+    <!-- <header class="header-homepage">
       <nav class="nav-homepage">
       <a href="maatschappelijke_problemen.html">problemen</a>
         <a href="#">Over Brazilië</a>
         <a href="index.html">Home</a>
         <a href="doelstelling.html">doelstelling</a>
       </nav>
-    </header>
-
+    </header> -->
+<div id="header"></div>
     <section id="hero" class="hero">
       <h1 class="intro1-religies">Religie in Brazilië</h1>
       <p class="intro2-religies">Een land vol cultuur</p>
@@ -139,21 +139,22 @@
 
     
 <div id="footer-container"></div>
-    <script>
-      const footer = document.createElement("footer");
-      footer.innerHTML = `
-            <p>gemaakt door Jayden & Dewish.</p>
-        
-        `;
-      footer.style.textAlign = "center";
-      footer.style.padding = "20px";
-      footer.style.backgroundColor = "#f1f1f1";
-      footer.style.position = "absolute";
+   <script>
+    const footer = document.createElement("footer");
+    footer.innerHTML = "<p>Gemaakt door Jayden & Dewish – PV1302</p>";
+    footer.style.textAlign = "center";
+    footer.style.padding = "20px";
+    footer.style.backgroundColor = "rgba(0, 62, 128, 0.9)";
+    footer.style.color = "#fff";
+    document.getElementById("footer-container").appendChild(footer);
 
-      footer.style.width = "100%";
-      footer.style.backgroundColor = "rgba(100, 100, 100,)";
 
-      document.getElementById("footer-container").appendChild(footer);
-    </script>
+    // header
+    fetch("header.html")
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById("header").innerHTML = data;
+    });
+  </script>
   </body>
 </html>
