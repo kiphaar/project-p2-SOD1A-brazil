@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div id="header"></div>
+<main>
+    <h2>Vul hieronder uw donatiegegevens in</h2>
+
+    <form>
+      <label>Volledige naam*
+        <input type="text" required>
+      </label>
+
+      <label>Telefoonnummer*
+        <input type="text" required>
+      </label>
+
+      <label>Email-adres*
+        <input type="email" required>
+      </label>
+
+      <label>Reden voor donatie*
+        <select required>
+          <option value="">-- Kies een reden --</option>
+          <option>Nagedachtenis overleden persoon</option>
+          <option>Spontane actie</option>
+          <option>Veel geleerd van website</option>
+          <option>Persoonlijk verbonden aan doel</option>
+          <option>Verjaardag actie</option>
+          <option>Bedrijfssponsoring</option>
+          <option>Periodieke gift</option>
+        </select>
+      </label>
+
+      <label>Bankrekeningnummer (IBAN)
+        <input type="text">
+      </label>
+
+      <label>Wijze van doneren</label>
+      <input type="radio" name="wijze" value="storten"> Zelf storten<br>
+      <input type="radio" name="wijze" value="incasso"> Incasso-opdracht
+
+      <label>Bedrag van donatie (€)*  
+        <input type="number" step="0.01" required>
+      </label>
+
+      <div class="buttons">
+        <button type="submit" class="button-formulier">Verzenden</button>
+        <button type="reset" class="button-formulier">Annuleren</button>
+      </div>
+    </form>
+  </main>
+
+
+    <div id="footer-container"></div>
+</body>
+</html>
+
+
+
+
+
+
+
