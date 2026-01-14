@@ -685,3 +685,117 @@ select {
   align-items: stretch;
   margin: 1.5rem 0;
 }
+
+tr,td,th {
+  color: white;
+  font-size: 30px;
+
+}
+
+
+.intro-tabel {
+  font-size: 48px;
+  color: #fff;
+  text-shadow: 2px 2px #009739;
+  margin-bottom: 20px;
+}
+
+
+.table-tabel {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.main-tabel {
+  max-width: 900px;
+  text-align: center;
+  z-index: 10;
+}
+
+.intro2-tabel {
+  font-size: 20px;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+
+.tabelletje {
+  background-color: rgba(0, 62, 128, 0.95);
+  padding: 30px;
+  border-radius: 12px;
+}
+
+
+
+.hero-tabel {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  padding: 2rem;
+}
+
+
+
+
+.formuliertje {
+    background-color: rgba(0, 62, 128, 1);
+  padding: 30px;
+  border-radius: 10px;
+  position: absolute;
+  top: 50%;
+  left: 75%;
+  transform: translate(-50%, -50%);
+}
+
+.intro-formulier {
+color: rgb(255, 255, 255);
+  font-size: 35px;
+  font-weight: bold;
+  text-shadow: 2px 2px #000;
+  position: absolute;
+  left: 25%;
+  top: 25%;
+  transform: translate(-50%, -50%);
+}
+
+
+.hero-formulier {
+  z-index: 4;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("https://wallpaperaccess.com/full/46591.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 94vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  text-align: center;
+}
+
+
+.foto-donatie {
+  width: 700px;
+  position: absolute;
+  top: 50%;
+  left: 25%;
+  transform: translate(-50%, -50%);
+}
+
+.body-tabel {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f4f4f4;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5)),
+    url(https://wallpaperaccess.com/full/46591.jpg);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
