@@ -799,3 +799,41 @@ color: rgb(255, 255, 255);
   background-size: cover;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#progress-container {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 90%;
+left: 75%;
+  width: 50%;
+  background-color: #eee;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-top: 20px;
+  height: 25px;
+}
+
+#progress-bar {
+  height: 100%;
+  width: 0;
+  background-color: #4caf50;
+  text-align: center;
+  color: white;
+  line-height: 25px;
+
+  border-radius: 10px 0 0 10px;
+}

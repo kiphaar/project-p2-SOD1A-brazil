@@ -13,7 +13,25 @@
 <section class="hero-formulier">
       <img src="img/donatie-remove.png" alt="donatie-afbeelding" class="foto-donatie">
     <h2 class="intro-formulier">Vul hieronder uw donatiegegevens in</h2>
+    
+
+
+
+
+
+
+<div id="progress-container">
+  <div id="progress-bar"></div>
+</div>
+
+
+
+
+
+
+
 <div class="formuliertje">
+    <h1 id="weergave">€3500</h1>
     <form>
       <label>Volledige naam*
         <input type="text" required>
@@ -49,11 +67,11 @@
       <input type="radio" name="wijze" value="incasso"> Incasso-opdracht
 
       <label>Bedrag van donatie (€)*  
-        <input type="number" step="0.01" required>
+        <input  id="donatie" type="number" step="0.01" required>
       </label>
 
       <div class="buttons">
-        <button type="submit" class="button-formulier1">Verzenden</button>
+        <button id="knop" type="submit" class="button-formulier1">Verzenden</button>
         <button type="reset" class="button-formulier2">Annuleren</button>
       </div>
     </form>
