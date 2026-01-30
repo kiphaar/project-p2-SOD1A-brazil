@@ -57,3 +57,6 @@ function updateProgress() {
     progressBar.style.width = percentage + "%";
     progressBar.textContent = Math.floor(percentage) + "%";
 }
+
+
+
