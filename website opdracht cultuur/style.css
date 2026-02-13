@@ -976,3 +976,106 @@ left: 75%;
 }
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Dark/Light toggle */
+.toggle-darklight {
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  padding: 0.5rem 1rem;
+  background-color: #ffd700;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  z-index: 10000;
+}
+
+/* Reclame pop-up */
+.popup-advertentie {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.7);
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+.popup-content {
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 10px;
+  text-align: center;
+  position: relative;
+  max-width: 400px;
+}
+.popup-close {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+.popup-btn {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  background-color: #008000;
+  color: #fff;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+/* Quiz */
+.quiz-doel {
+  background-color: rgba(255, 255, 255, 0.9);
+  max-width: 500px;
+  margin: 3rem auto;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+  text-align: left;
+}
+.quiz-doel h2 {
+  color: #008000;
+  margin-bottom: 1rem;
+}
+.quiz-form label {
+  display: block;
+  margin: 0.5rem 0;
+}
+.quiz-submit {
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  background-color: #ffd700;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Dark mode styling */
+.dark-mode {
+  background-color: #121212 !important;
+  color: #fff !important;
+}
+.dark-mode .hero,
+.dark-mode .quiz-doel,
+.dark-mode .popup-content {
+  background-color: rgba(0,0,0,0.8) !important;
+  color: #fff !important;
+}
