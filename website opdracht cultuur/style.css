@@ -704,11 +704,33 @@ tr,td,th {
 .table-tabel {
   width: 100%;
   border-collapse: collapse;
+  color: #fff;
+}
+
+.table-tabel th,
+.table-tabel td {
+  border: 1px solid #fff;
+  padding: 12px 8px;
+}
+
+.table-tabel th {
+  background-color: #0080C0;
+  color: #fff;
+  font-weight: bold;
+}
+
+.table-tabel tbody tr:nth-child(odd) {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.table-tabel tbody tr:nth-child(even) {
+  background-color: rgba(255, 255, 255, 0.2);
 }
 
 .main-tabel {
   max-width: 900px;
-  text-align: center;
+  margin: 0 auto;
+  padding: 2rem;
   z-index: 10;
 }
 
