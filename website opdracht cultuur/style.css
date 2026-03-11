@@ -859,3 +859,245 @@ left: 75%;
 
   border-radius: 10px 0 0 10px;
 }
+
+
+
+
+
+
+
+
+
+.body-doelen-fullpage {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
+  font-family: "Arial", sans-serif;
+  background-color: #f4f4f4;
+  overflow: hidden; 
+}
+
+
+.single-screen-container {
+  display: grid;
+  grid-template-rows: 50% 50%;
+  height: 100vh;
+}
+
+
+.hero-block {
+  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("https://wallpaperaccess.com/full/46591.jpg") center/cover no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+}
+
+.hero-title {
+  font-size: 50px;
+  color: #ffcc29;
+  font-weight: bold;
+  text-shadow: 2px 2px #009739;
+}
+
+.hero-subtitle {
+  font-size: 20px;
+  color: #ffcc29;
+  text-shadow: 2px 2px #000;
+  margin-bottom: 20px;
+}
+
+
+.hero-fotos {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.hero-foto {
+  width: 150px;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+.hero-foto:hover {
+  transform: scale(1.05);
+}
+
+
+.verslag-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0,62,128,0.1);
+  padding: 20px;
+  gap: 20px;
+}
+
+.verslag-title {
+  font-size: 30px;
+  color: #008000;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+
+.verslag-blokken {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+  width: 90%;
+}
+
+.blok-doelen {
+  background-color: rgba(0,128,0,0.8);
+  color: #fff;
+  padding: 15px;
+  border-radius: 10px;
+  font-size: 14px;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.3);
+  transition: transform 0.3s;
+}
+
+.blok-doelen:hover {
+  transform: translateY(-5px);
+}
+
+
+.verslag-quote {
+  font-size: 16px;
+  font-style: italic;
+  color: #ffcc29;
+  background-color: rgba(0,0,0,0.3);
+  padding: 10px 15px;
+  border-left: 5px solid #ffd700;
+  margin-top: 10px;
+  text-align: center;
+}
+
+
+.verslag-fotos {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.verslag-foto {
+  width: 150px;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+.verslag-foto:hover {
+  transform: scale(1.05);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Dark/Light toggle */
+.toggle-darklight {
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  padding: 0.5rem 1rem;
+  background-color: #ffd700;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  z-index: 10000;
+}
+
+/* Reclame pop-up */
+.popup-advertentie {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.7);
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+.popup-content {
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 10px;
+  text-align: center;
+  position: relative;
+  max-width: 400px;
+}
+.popup-close {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+.popup-btn {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  background-color: #008000;
+  color: #fff;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+/* Quiz */
+.quiz-doel {
+  background-color: rgba(255, 255, 255, 0.9);
+  max-width: 500px;
+  margin: 3rem auto;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+  text-align: left;
+}
+.quiz-doel h2 {
+  color: #008000;
+  margin-bottom: 1rem;
+}
+.quiz-form label {
+  display: block;
+  margin: 0.5rem 0;
+}
+.quiz-submit {
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  background-color: #ffd700;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Dark mode styling */
+.dark-mode {
+  background-color: #121212 !important;
+  color: #fff !important;
+}
+.dark-mode .hero,
+.dark-mode .quiz-doel,
+.dark-mode .popup-content {
+  background-color: rgba(0,0,0,0.8) !important;
+  color: #fff !important;
+}

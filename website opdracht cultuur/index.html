@@ -1,55 +1,70 @@
 <!DOCTYPE html>
 <html lang="nl">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Website over Brazilië" />
-    <title>Brazilië Homepage</title>
-    <link rel="stylesheet" href="style.css" />
-    <script src="script.js" defer></script>
-  </head>
-  <body class="body-homepage">
-<div id="header"></div>
-    <section id="hero" class="hero">
-      <h1 class="intro1">Ontdek Brazilië</h1>
-   
-      <p class="intro2">Een land vol natuur en cultuur</p>
-      <a href="#pagina2" class="introbtn">Lees meer</a>
-      <div class="shape-lijntje"></div>
-      <div class="vlak-doorzichtig"></div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Website over Brazilië" />
+  <title>Brazilië Homepage</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
+</head>
+<body class="body-homepage">
 
-      <div class="fotos-brazil">
-        <img
-          class="foto-brazil-bewerk"
-          src="img/brazil-foto-1.jpg"
-          alt="brazil-foto-1"
-        />
-        <img
-          class="foto-brazil-bewerk"
-          src="img/brazil-foto-2.jpg"
-          alt="brazil-foto-2"
-        />
-        <img
-          class="foto-brazil-bewerk"
-          src="img/brazil-foto-3.jpg"
-          alt="brazil-foto-3"
-        />
-        <img
-          class="foto-brazil-bewerk"
-          src="img/brazil-foto-4.jpg"
-          alt="brazil-foto-4"
-        />
-      </div>
-    </section>
+  <!-- Dark/Light mode toggle -->
+  <button class="toggle-darklight">🌙 / ☀️</button>
 
-    <section id="pagina2" class="pagina2">
-      <main class="main-homepage" id="main">
-        <h2>informatie</h2>
-      </main>
-    
-    </section>
-<div id="footer-container"> </div>
+  <!-- Header -->
+  <div id="header"></div>
 
+  <!-- Hero sectie -->
+  <section id="hero" class="hero">
+    <h1 class="intro1">Ontdek Brazilië</h1>
+    <p class="intro2">Een land vol natuur en cultuur</p>
+    <a href="#quiz-doel" class="introbtn">Quiz</a>
+    <div class="shape-lijntje"></div>
+    <div class="vlak-doorzichtig"></div>
+    <div class="fotos-brazil">
+      <img class="foto-brazil-bewerk" src="img/brazil-foto-1.jpg" alt="brazil-foto-1"/>
+      <img class="foto-brazil-bewerk" src="img/brazil-foto-2.jpg" alt="brazil-foto-2"/>
+      <img class="foto-brazil-bewerk" src="img/brazil-foto-3.jpg" alt="brazil-foto-3"/>
+      <img class="foto-brazil-bewerk" src="img/brazil-foto-4.jpg" alt="brazil-foto-4"/>
+    </div>
+  </section>
 
-  </body>
-</html
+  <!-- Reclame pop-up -->
+  <div class="popup-advertentie">
+    <div class="popup-content">
+      <span class="popup-close">&times;</span>
+      <h2>Advertentie</h2>
+      <p>Bekijk onze speciale aanbieding!</p>
+      <a href="#" class="popup-btn">Klik hier</a>
+    </div>
+  </div>
+
+  <!-- Quiz over het goede doel -->
+  <section class="quiz-doel" id="quiz-doel">
+    <h2>Test je kennis over het goede doel!</h2>
+    <p>Welke van de onderstaande stellingen is waar?</p>
+    <form class="quiz-form">
+      <label>
+        <input type="radio" name="quiz1" value="a" />
+        Het goede doel richt zich op onderwijs.
+      </label>
+      <label>
+        <input type="radio" name="quiz1" value="b" />
+        Het goede doel richt zich op ruimtevaart.
+      </label>
+      <label>
+        <input type="radio" name="quiz1" value="c" />
+        Het goede doel richt zich op autoproductie.
+      </label>
+      <button type="button" class="quiz-submit">Controleer antwoord</button>
+    </form>
+    <p class="quiz-result"></p>
+  </section>
+
+  <!-- Footer -->
+  <div id="footer-container"></div>
+
+</body>
+</html>

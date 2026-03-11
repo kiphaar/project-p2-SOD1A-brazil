@@ -57,3 +57,47 @@ function updateProgress() {
     progressBar.style.width = percentage + "%";
     progressBar.textContent = Math.floor(percentage) + "%";
 }
+
+
+
+
+
+
+
+
+const toggleBtn = document.querySelector('.toggle-darklight');
+toggleBtn.addEventListener('click', () => {
+  document.body.classList.toggle('dark-mode');
+});
+
+
+const popup = document.querySelector('.popup-advertentie');
+const popupClose = document.querySelector('.popup-close');
+
+function showPopup() {
+  popup.style.display = 'flex';
+}
+
+popupClose.addEventListener('click', () => {
+  popup.style.display = 'none';
+});
+
+
+setInterval(showPopup, 180000);
+
+
+const quizSubmit = document.querySelector('.quiz-submit');
+const quizResult = document.querySelector('.quiz-result');
+
+quizSubmit.addEventListener('click', () => {
+  const selected = document.querySelector('input[name="quiz1"]:checked');
+  if (!selected) {
+    quizResult.textContent = "Selecteer eerst een antwoord!";
+    return;
+  }
+  if (selected.value === "a") {
+    quizResult.textContent = "Correct! Het goede doel richt zich op onderwijs.";
+  } else {
+    quizResult.textContent = "Helaas, dat is niet correct. Probeer opnieuw.";
+  }
+});
