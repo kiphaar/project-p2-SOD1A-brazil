@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vrijwilligers aanmelden</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
+</head>
+<body class="body-homepage">
+
+  <!-- header wordt via script.js geladen -->
+  <div id="header"></div>
+
+  <main class="main-homepage">
+    <h2>Word vrijwilliger</h2>
+    <p>Vul onderstaand formulier in om je aan te melden als vrijwilliger voor ons goede doel.</p>
+
+    <form id="vrijwilligers-form" class="blocks-container" action="#" method="post">
+      <div class="text-block">
+        <label for="fullname">Volledige naam *</label><br />
+        <input type="text" id="fullname" name="fullname" required />
+      </div>
+
+      <div class="text-block">
+        <label for="phone">Telefoonnummer *</label><br />
+        <input type="tel" id="phone" name="phone" required />
+      </div>
+
+      <div class="text-block">
+        <label for="email">E-mailadres *</label><br />
+        <input type="email" id="email" name="email" required />
+      </div>
+
+      <div class="text-block">
+        <label for="preference">Voorkeur vrijwilligerswerk</label><br />
+        <select id="preference" name="preference">
+          <option value="game">Nieuwe game bouwen</option>
+          <option value="fundraising">Geld inzamelen</option>
+          <option value="admin">Administratieve taken doen</option>
+          <option value="communication">Communicatie en social media</option>
+          <option value="events">Evenementen organiseren</option>
+          <option value="support">Technische ondersteuning</option>
+          <option value="education">Educatieve workshops geven</option>
+        </select>
+      </div>
+
+      <div class="text-block">
+        <p>Op welke dagen beschikbaar?</p>
+        <label><input type="checkbox" name="days" value="maandag" /> maandag</label><br />
+        <label><input type="checkbox" name="days" value="dinsdag" /> dinsdag</label><br />
+        <label><input type="checkbox" name="days" value="woensdag" /> woensdag</label><br />
+        <label><input type="checkbox" name="days" value="donderdag" /> donderdag</label><br />
+        <label><input type="checkbox" name="days" value="vrijdag" /> vrijdag</label><br />
+        <label><input type="checkbox" name="days" value="zaterdag" /> zaterdag</label><br />
+        <label><input type="checkbox" name="days" value="zondag" /> zondag</label><br />
+      </div>
+
+      <div class="text-block">
+        <label for="motivation">Motivatie</label><br />
+        <textarea id="motivation" name="motivation" rows="5"></textarea>
+      </div>
+
+      <div class="text-block">
+        <button type="submit">Verzenden</button>
+        <button type="reset">Annuleren</button>
+      </div>
+    </form>
+  </main>
+
+  <!-- footer wordt via script.js toegevoegd aan container -->
+  <div id="footer-container"></div>
+
+</body>
+</html>
